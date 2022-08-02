@@ -1,0 +1,570 @@
+@charset "UTF-8";
+/* Fuentes. ---------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+/* font-family: 'Heebo', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+/* font-family: 'Oleo Script', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
+/* font-family: 'Josefin Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
+/* font-family: 'Kanit', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+/* font-family: 'Lobster', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+/* font-family: 'Cookie', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap");
+/*font-family: 'Noto Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* Fin Fuentes. ---------------------------- */
+h1, h3 {
+  text-align: center;
+  color: #000;
+  font-family: 'Lobster', cursive;
+  margin-top: 50px; }
+
+.titulos {
+  text-align: center;
+  color: #000;
+  margin-top: 50px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Cookie', cursive;
+  font-size: 3.5rem; }
+
+h3 {
+  margin: 40px auto 20px auto;
+  font-size: 1.8rem; }
+
+h5 {
+  font-size: 1.6rem; }
+
+.fotosPlatos h3 {
+  width: 90%;
+  font-size: 2rem;
+  border-radius: 4px;
+  background-color: #E2E8CE;
+  padding: 5px 0; }
+
+/* Reseteo */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Diseño general */
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+html {
+  font-size: 62.5%; }
+
+/*  Inicio del Header.---------------------- */
+header li {
+  font-size: 1.8rem;
+  margin: 6px; }
+
+header ul {
+  margin: auto; }
+
+.navbar {
+  text-align: center; }
+
+.buttonSearch {
+  font-size: 1.4rem; }
+
+.dropdown-item {
+  font-size: 1.2rem; }
+
+#logoPrincipal {
+  width: 90px; }
+
+#logIn {
+  width: 30px; }
+
+.logosApps {
+  width: 35px; }
+
+.btn {
+  color: #d27109;
+  border-color: #d27109; }
+  .btn:hover {
+    background-color: #d27109;
+    border-color: #d27109; }
+
+/* Animacion Menu */
+.menuLink:hover {
+  color: #d27109 !important;}
+
+/* Animacion Subrayado Menu 
+.menuLink {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
+}
+
+.menuLink:hover, .menuLink:focus {
+    background-size: 100% 1px;
+
+}
+*/
+/* Fin del Header.-------------------------- */
+/*  Inicio del Footer.---------------------- */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 15px 0 15px; }
+
+.navFooter {
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  margin-left: 15px; }
+  .navFooter li {
+    margin: 5px 0; }
+
+.logoFooter {
+  width: 80px; }
+
+.navContactoFooter {
+  text-align: right;
+  margin-right: 15px; }
+  .navContactoFooter li {
+    display: inline-block; }
+
+.creador {
+  text-align: center;
+  margin: 5px;
+  background-color: #d27109;
+  font-size: 1.2rem; }
+
+/* Fin del Footer.-------------------------- */
+/* Inicio del Index.------------------------ */
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+.portada {
+  width: 90%;
+  height: 300px;
+  overflow: hidden;
+  background-image: url(../img/fotoanchacincoplatos.jpeg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  border: #000 solid 1px;
+  margin: auto;
+  margin-top: 50px; }
+
+.infoNosotros {
+  font-size: 1.5rem; }
+
+.infoNosotros p {
+  font-family: 'Noto Sans', sans-serif;
+  text-align: justify;
+  margin: 0px auto 0px auto;
+  max-width: 70%;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: bolder; }
+
+p + p {
+  text-indent: 0.5em; }
+
+.bienvenidos {
+  margin-top: 20px !important; }
+
+/* Fin del Index.--------------------------- */
+/* Inicio de Platos.------------------------ */
+.navInterna li {
+  display: inline-block; }
+
+p {
+  display: inherit; }
+
+.navInterna {
+  text-align: center;
+  background-color: #E2E8CE;
+  padding: 20px; }
+  .navInterna a,
+  .navInterna p {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    margin: 5px; }
+
+.plato {
+  width: 200px;
+  height: 150px;
+  max-width: 100%;
+  margin: 10px; }
+
+#platos-vegie, #platos-carne {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 20px; }
+
+.platos {
+  border: #000 2px solid;
+  border-radius: 4px;
+  padding-bottom: 30px;
+  max-width: 220px;
+  text-align: center;
+  box-shadow: 0px 5px 9px 2px rgba(0, 0, 0, 0.81); }
+  .platos p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    /*text-align: center;*/
+    color: black;
+    font-family: "Poppins";
+    font-weight: bolder;
+    margin: 10px auto 10px auto;
+    max-width: 90%;
+    height: 45px; }
+  .platos:hover {
+    transform: scale(1.02, 1.02); }
+
+    .campoCantidad {
+    max-width: 30px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 15px;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+
+  }
+.btn:hover {
+  color: #fff; }
+
+#navbarScroll {
+  text-align: left; }
+
+/* Fin de Platos.-------------------------- */
+/* Inicio Contacto.------------------------ */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.formContacto {
+  border: #000 solid 2px;
+  border-radius: 4px;
+  width: 50vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; }
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  margin-top: 20px; }
+  .inputs label {
+    width: 220px;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 85%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    /*text-align: center;*/ }
+
+.campo {
+  display: block;
+  width: 220px;
+  max-width: 80%;
+  padding: 10px;
+  margin: auto;
+  border: none;
+  border-bottom: gray solid 1px; }
+
+textarea {
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 80%; }
+
+.botonForm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; }
+  .botonForm input {
+    margin: 5px;
+    width: 60px;
+    height: 22px;
+    background-image: linear-gradient(to right, #FE9A2E, #d27109);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: all 0.3s; }
+    .botonForm input:hover {
+      transform: scale(1.1, 1.1); }
+    .botonForm input:active {
+      transform: scale(0.5, 0.5); }
+
+/* Fin Contacto.--------------------------- */
+/* Inicio Entregas.------------------------ */
+.infoEntregas ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.infoEntregas h3 {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 0; }
+
+.infoEntregas p {
+  margin-left: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  /*text-align: center;*/ }
+
+.infoEntregas li {
+  border: #4f4f4f solid 2px;
+  border-radius: 4px;
+  width: 100vw;
+  max-width: 80%;
+  margin-top: 30px;
+  padding-bottom: 10px; }
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0; }
+  .mapa div {
+    padding: 2px;
+    border: #000 solid 3px;
+    border-radius: 4px;
+    display: inline-block; }
+
+iframe {
+  width: 600px;
+  height: 350px; }
+
+/* Fin Entregas.--------------------------- */
+/* Inicio Preguntas.------------------------ */
+.preguntaTitulo {
+  text-align: left;
+  margin-left: 2vw;
+  padding-top: 10px; }
+
+.preguntaRespuesta {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  /*text-align: center;*/ }
+
+.preguntas h3 {
+  margin-top: 20px; }
+
+.preguntas li {
+  border: #4f4f4f solid 2px;
+  border-radius: 4px;
+  width: 100vw;
+  max-width: 80%;
+  margin-top: 20px;
+  margin-left: 10vw;
+  padding-bottom: 10px; }
+
+/* Fin Preguntas.--------------------------- */
+/* Inicio Carrito.-------------------------- */
+
+.carrito {
+  display: block;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+#bodyCarrito main{
+  min-height: 500px;
+}
+
+#productosAgregados{
+  border-radius: 4px;
+  width: 90%;
+  margin: auto; 
+  padding-top: 30px;
+}
+
+#comentarioEnvio{
+width: 90%;
+margin: auto;
+text-align: center;
+font-size: 1.6rem;
+font-family:Arial, Helvetica, sans-serif;
+/* background-color: beige; */
+}
+
+
+#productosAgregados p{
+  display: inline-block;
+}
+#tituloProd {
+  width: 450px;
+  padding-left: 30px;
+  padding-top: 15px;
+  font-size: 1.8rem;
+}
+#tituloPrecio, #tituloTotal{
+  width: 80px;
+  margin-left: 10px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 1.8rem;
+}
+#tituloCant{
+  width: 80px;
+  margin-left: 50px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 1.8rem;
+}
+.tituloCarrito{
+  margin: 10px 0px 20px 0px;
+  padding-bottom: 20px;
+  display: flex ; 
+  justify-content: space-between;
+  align-items:center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+}
+.productoCarrito {
+  display: flex;
+  margin: 10px 0px 20px 0px;
+  justify-content: space-between;
+  align-items:center;
+  padding-bottom: 20px;
+  border-bottom: lightgray solid 0.5px;
+ 
+  }
+  .productoCarrito p {
+    display: inline-block !important; 
+    font-family: 'Roboto', sans-serif;
+
+     }
+
+  .productoCarrito img {
+    display: inline-block !important;}
+
+.nombreCarrito{
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 350px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  align-items: center;
+    }
+ .precioCarrito, .totalCarrito{
+  margin-left: 10px;
+  padding-top: 10px;
+  width: 80px  ;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  
+  align-items: center;
+}
+.cantidadCarrito{
+  margin-left: 50px;
+  padding-top: 10px;
+  width: 80px  ;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1.6rem;
+  text-align: center;
+}
+.imgCarrito {
+  width: 100px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.eliminarProd{
+  border: none;
+  background: none;
+  color: red;
+  font-size: 2rem;
+}
+
+#totalAPagar {
+  text-align: right;
+  font-size: 2.3rem;
+  color: #4f4f4f;
+  padding-right: 60px;
+}
+
+#vaciarCarrito{
+  text-align: right;
+}
+
+/* Fin Carrito.--------------------------- */
+/* Inicio Planes.------------------------ */
+.dietas {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 150px; }
+  .dietas h4 {
+    font-size: 1.8rem; }
+  .dietas p {
+    font-size: 1.6rem;
+    font-family: 'Noto Sans', sans-serif;
+    color: #000;
+    font-weight: bolder; }
+  .dietas li {
+    list-style-type: square; }
+
+/* Fin Planes.--------------------------- */
+/* Media Querys.--------------------------- */
+/* Vista Tablet */
+@media screen and (max-width: 1024px) {
+  .mapa {
+    display: none; } }
+
+/* Vista Mobile */
+@media screen and (max-width: 990px) {
+  .buttonSearch {
+    display: none; }
+  .footer {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .navFooter,
+  .imgFooter,
+  .navContactoFooter {
+    margin: 10px 0; }
+  .formContacto {
+    min-width: 80%; }
+  .platosPadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .comida {
+    border: none; } }

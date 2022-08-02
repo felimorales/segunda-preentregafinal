@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Comida rica y saludable. Viandas caseras personalizadas.">
+    <meta name="keywords" content="comida sana, viandas, rico, saludable, que rico soli, dma, keto">
+    <meta property="og:title" content="Come rico y sano, como en casa. Viandas caseras saludables.">
+    <meta property="og:url" content="https://www.quericosoli.com/ ">
+    <meta property="og:site_name" content="Que Rico Soli">
+    <meta property="og:description" content="Que Rico Soli. Comer sano y a buen precio es posible.">
+
+    <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
+    <title>Que Rico Soli - Platos</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
+
+</head>
+
+<body>
+    <header class="p-3 border-bottom">
+
+        <!-- Navegacion Boostrap -->
+
+        <nav class="navbar navbar-expand-lg  w-100">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler cl-md-5 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- logo -->
+                <a class="navbar-brand col-lg-2 cl-md-2 " href="../index.html"><img src="../img/logo.jpg"
+                        id="logoPrincipal" alt="Logo qrs"></a>
+
+
+                <!-- menu -->
+                <div class="collapse navbar-collapse col-lg-6" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0  " style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active menuLink" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menuLink" aria-current="page" href="platos.html">Platos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menuLink" aria-current="page"
+                                href="planes-de-alimentacion.html">Planes de Alimentacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menuLink" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!-- barra search -->
+                    <form class="d-flex col-lg-3" role="search">
+                        <input class="form-control me-2 buttonSearch" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success buttonSearch" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <!-- boton log in -->
+                <div class="dropdown text-end col-lg-1 cl-md-5 ">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../img/login.png" id="logIn" alt="Log in">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="carrito.html">Carrito</a></li>
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- NAVEGACION INTERNA -->
+    <nav class="navInterna">
+        <h2  class="titulos">Platos</h2>
+        <ul>
+            <li><a href="#vegetariano">Vegetariano</a>
+                <p>|</p>
+            </li>
+            <li><a href="#conCarne">Con Carne</a>
+             
+            </li>
+                   
+        </ul>
+    </nav>
+
+    <!-- Secciones de platos -->
+    <!-- Modal -->
+    <div class="modal" id="modalComprar">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Producto añadido al carrito de compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>¡Tu producto fue añadido correctamente al carrito de compras!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn " data-bs-dismiss="modal" >Seguir Comprando</button>
+                    <a href="./carrito.html"><button type="button" class="btn " data-bs-dismiss="modal" >Ir al Carrito</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="fotosPlatos">
+        <!-- vegetarianos -->
+        <div id="vegetariano" >
+            <h3>Vegetariano</h3>
+            <div id="platos-vegie">       </div>
+        </div>
+        <!-- con carne -->
+        <div id="conCarne" >
+            <h3>Con Carne</h3>
+            <div id="platos-carne">      </div>
+        </div>
+        
+        
+    </section>
+
+
+
+    <!-- INICIO FOOTER -->
+    <footer>
+        <section class="footer">
+            <nav class="navFooter">
+                <ul>
+                    <li><a href="./preg-frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="./entregas.html">Entrega a Domicilio</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <figure class="imgFooter">
+                <a href="../index.html"><img class="logoFooter" src="../img/logo.jpg" alt="Logo qrs"></a>
+            </figure>
+
+            <nav class="navContactoFooter">
+                <ul>
+                    <li><a href="https://www.facebook.com/QuericoSoli/" target="_blank"><img src="../img/facebook.png"
+                                class="logosApps" alt="Logo fb"></a></li>
+                    <li><a href="https://www.instagram.com/quericosoli/?hl=es" target="_blank"><img
+                                src="../img/instagram.png" class="logosApps" alt="Logo ig"></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=+541162456018" target="_blank"><img
+                                src="../img/whatsapp.png" class="logosApps" alt="Logo wpp"></a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="creador">
+            <p>Sitio Web creado por <strong>Felipe M.</strong></p>
+        </section>
+
+    </footer>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/platos.js"></script>
+</body>
+
+</html>
